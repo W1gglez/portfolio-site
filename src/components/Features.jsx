@@ -17,18 +17,7 @@ const items = [
       'A user-friendly app to help you effortlessly track your workouts and calorie intake.',
     image: 'url("fittrack-screenshots.png")',
   },
-  {
-    icon: <DevicesRoundedIcon />,
-    title: 'EDA Feedback Site',
-    description: 'A simple site to collect user feedback',
-    image: 'url("eda-feedback.png")',
-  },
-  {
-    icon: <DevicesRoundedIcon />,
-    title: 'TBD',
-    description: 'TBD',
-    image: '',
-  },
+
 ];
 
 export default function Features() {
