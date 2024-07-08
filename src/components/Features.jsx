@@ -7,7 +7,10 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
 import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
+import ChevronRight from '@mui/icons-material/ChevronRight';
+import { Link } from '@mui/material';
 
 const items = [
   {
@@ -16,8 +19,8 @@ const items = [
     description:
       'A user-friendly app to help you effortlessly track your workouts and calorie intake.',
     image: 'url("fittrack-screenshots.png")',
+    url: 'https://lweigel-fit-track.fly.dev',
   },
-
 ];
 
 export default function Features() {
@@ -55,7 +58,7 @@ export default function Features() {
               Projects
             </Typography>
           </div>
-          <Grid
+          {/* <Grid
             container
             item
             gap={1}
@@ -87,8 +90,8 @@ export default function Features() {
                 }}
               />
             ))}
-          </Grid>
-          <Box
+          </Grid> */}
+          {/* <Box
             component={Card}
             variant='outlined'
             sx={{
@@ -112,7 +115,7 @@ export default function Features() {
                 {selectedFeature.description}
               </Typography>
             </Box>
-          </Box>
+          </Box> */}
           <Stack
             direction='column'
             justifyContent='center'
@@ -121,7 +124,7 @@ export default function Features() {
             useFlexGap
             sx={{ width: '100%', display: { xs: 'none', sm: 'flex' } }}
           >
-            {items.map(({ icon, title, description }, index) => (
+            {items.map(({ icon, title, description, url }, index) => (
               <Card
                 key={index}
                 variant='outlined'
@@ -187,6 +190,13 @@ export default function Features() {
                     >
                       {description}
                     </Typography>
+                    <Link
+                      sx={{ display: 'flex', alignItems: 'center' }}
+                      href={url}
+                      target='_blank'
+                    >
+                      Explore App <ChevronRight fontSize='sm' />
+                    </Link>
                   </Box>
                 </Box>
               </Card>
