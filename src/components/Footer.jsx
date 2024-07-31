@@ -81,9 +81,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color='inherit'
-            href='www.linkedin.com/in/logan-weigel
-
-'
+            href='https://www.linkedin.com/in/logan-weigel'
             aria-label='LinkedIn'
             sx={{ alignSelf: 'center' }}
           >
