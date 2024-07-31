@@ -62,7 +62,7 @@ export default function Footer() {
             color: 'text.secondary',
           }}
         >
-          <Typography>Lets Connect: </Typography>
+          <Typography>Let's Connect: </Typography>
           <IconButton
             color='inherit'
             href='mailto: weigelog@gmail.com'

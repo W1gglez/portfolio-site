@@ -2,12 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import Chip from '@mui/material/Chip';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
 import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
 import ChevronRight from '@mui/icons-material/ChevronRight';
 import { Link } from '@mui/material';
@@ -20,6 +18,14 @@ const items = [
       'A user-friendly app to help you effortlessly track your workouts and calorie intake.',
     image: 'url("fittrack-screenshots.png")',
     url: 'https://lweigel-fit-track.fly.dev',
+  },
+  {
+    icon: <DevicesRoundedIcon />,
+    title: 'RJ Energy Solutions - Audit Portal',
+    description:
+      "Worked closely with the client to build  a proof-of-concept web app improving  the company's Google Sheets workflow for tracking equipment, costs, and carbon footprint",
+    image: 'url("RJ audi portal.png")',
+    url: 'https://energy-solutions-portal.fly.dev/',
   },
 ];
 
@@ -58,64 +64,6 @@ export default function Features() {
               Projects
             </Typography>
           </div>
-          {/* <Grid
-            container
-            item
-            gap={1}
-            sx={{ display: { xs: 'auto', sm: 'none' } }}
-          >
-            {items.map(({ title }, index) => (
-              <Chip
-                key={index}
-                label={title}
-                onClick={() => handleItemClick(index)}
-                sx={{
-                  borderColor: (theme) => {
-                    if (theme.palette.mode === 'light') {
-                      return selectedItemIndex === index ? 'primary.light' : '';
-                    }
-                    return selectedItemIndex === index ? 'primary.light' : '';
-                  },
-                  background: (theme) => {
-                    if (theme.palette.mode === 'light') {
-                      return selectedItemIndex === index ? 'none' : '';
-                    }
-                    return selectedItemIndex === index ? 'none' : '';
-                  },
-                  backgroundColor:
-                    selectedItemIndex === index ? 'primary.main' : '',
-                  '& .MuiChip-label': {
-                    color: selectedItemIndex === index ? '#fff' : '',
-                  },
-                }}
-              />
-            ))}
-          </Grid> */}
-          {/* <Box
-            component={Card}
-            variant='outlined'
-            sx={{
-              display: { xs: 'auto', sm: 'none' },
-              mt: 4,
-            }}
-          >
-            <Box sx={{ px: 2, pb: 2 }}>
-              <Typography
-                color='text.primary'
-                variant='body2'
-                fontWeight='bold'
-              >
-                {selectedFeature.title}
-              </Typography>
-              <Typography
-                color='text.secondary'
-                variant='body2'
-                sx={{ my: 0.5 }}
-              >
-                {selectedFeature.description}
-              </Typography>
-            </Box>
-          </Box> */}
           <Stack
             direction='column'
             justifyContent='center'
